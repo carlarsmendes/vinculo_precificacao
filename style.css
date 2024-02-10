@@ -1,0 +1,79 @@
+
+
+:root {
+    --c-light-green: #52FFB6;
+    --c-dark-green: #031519;
+    --c-dark-green-2: #112C32;
+    --c-primary-font:  'Inter', Arial, sans-serif;
+}
+
+html, h1, h2, p {
+    font-family: var(--c-primary-font);
+}
+
+.c-btn {
+    background-color: var(--c-light-green);
+    border: 1pc solid var(--c-light-green);
+    padding: 16px, 24px, 16px, 24px;
+    border-radius: 8px;
+    color: var(--c-dark-green);
+}
+
+.c-light-green-text {
+    color: var(--c-light-green);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 200;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+h2 {
+    font-family: var(--c-primary-font);
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.c-body-l {
+    font-family: var(--c-primary-font);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+
+.c-body-xl {
+    font-family: var(--c-primary-font);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.c-align-left {
+    text-align: left;
+}
+
+.c-align-center {
+    text-align: center;
+}
+
+.c-step-pill {
+    padding: 10px, 24px, 10px, 24px;
+    border-radius: 63px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+}
