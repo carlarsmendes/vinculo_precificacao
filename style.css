@@ -110,3 +110,11 @@ h4 {
     line-height: 19px;
     text-align: center;
 }
+
+/* Example of responsive font -> smaller screen 
+TODO: Define breakpoints */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* Adjust the base font size for smaller screens */
+    }
+}
