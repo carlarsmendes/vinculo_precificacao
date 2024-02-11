@@ -8,7 +8,7 @@
     --c-primary-text-color: #fff;
 }
 
-html {
+html, body {
     font-size: 16px; /* Base font size */
     background-color: var(--c-dark-green);
     color: var(--c-primary-text-color);
@@ -131,6 +131,11 @@ h4 {
 header {    
     background: linear-gradient(102.63deg, #031519 11.92%, #112C32 181.82%);
     color: var(--c-primary-text-color);
+}
+
+
+footer {
+    background-color: var(--c-dark-green-2);
 }
 
 /* Example of responsive font -> smaller screen 
