@@ -190,6 +190,20 @@ header .col-1, header .col-2 {
     min-height: 1200px;
 }
 
+#answer-questionnaire {
+    min-height: 890px;
+}
+
+#project-types-container {
+    display: flex;
+    flex-direction: row;
+    gap:1%;
+}
+
+#project-types-container li {
+    list-style: none;
+}
+
 .c-card {
     background-color: var(--c-dark-green-2);
     padding: 48px 20px;
