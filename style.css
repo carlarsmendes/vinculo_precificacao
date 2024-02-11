@@ -126,6 +126,13 @@ h4 {
     text-align: center;
 }
 
+/* SECTIONS */
+
+header {    
+    background: linear-gradient(102.63deg, #031519 11.92%, #112C32 181.82%);
+    color: var(--c-primary-text-color);
+}
+
 /* Example of responsive font -> smaller screen 
 TODO: Define breakpoints */
 @media (max-width: 768px) {
