@@ -8,7 +8,7 @@
 // Function to create a card element
 function createCard(name, content) {
     const card = document.createElement('div');
-    card.classList.add('card');
+    card.classList.add('c-testimonial-card');
 
     const cardTitle = document.createElement('h2');
     cardTitle.textContent = name;
@@ -26,8 +26,8 @@ function createCard(name, content) {
 function renderCards(data) {
     const cardContainer = document.getElementById('testimonials-container');
 
-    data.forEach(({ title, content }) => {
-        const card = createCard(title, content);
+    data.forEach(({ name, testimonial }) => {
+        const card = createCard(name, testimonial);
         cardContainer.appendChild(card);
     });
 }
