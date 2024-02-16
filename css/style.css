@@ -63,6 +63,7 @@ h4 {
     font-size: 1.5em; /* Equivalent to 24px / 16px */
     line-height: 100%;
     text-align: left;
+    color: var(--c-light-green);
 }
 
 .subtitle-2 {
@@ -153,7 +154,7 @@ h4 {
 
 /* SECTIONS */
 
-header, #steps, #answer-questionnaire {
+header, #steps, #answer-questionnaire, #testimonials-container, #features-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,9 +201,9 @@ header .col-1, header .col-2 {
 }
 
 #features-container {
-    display: flex;
+   /* display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center;*/
     flex-wrap: wrap;
     align-items: start;
     gap: 1%;
@@ -257,6 +258,15 @@ header .col-1, header .col-2 {
 
 #answer-questionnaire p {
     max-width: 800px;
+}
+
+.c-card-header {
+    display: flex;
+    gap:3%;
+}
+
+#testimonials-container {
+    gap: 2%;
 }
 
 #project-types-container {
