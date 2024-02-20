@@ -1,0 +1,24 @@
+{
+  "name": "vinculo_precificacao",
+  "version": "1.0.0",
+  "description": "Precificacao Vinculo is a comprehensive resource for designers seeking to price their projects effectively and fairly. Our webpage provides detailed explanations and links to a sellable digital product: a spreadsheet tool designed to streamline the pricing process for design projects. Whether you're a freelance designer or a design agency, PriceCalc empowers you to make informed pricing decisions and maximize your profitability.",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test",
+    "optimize": "uglifyjs js/*.js -o dist/js/script.min.js && cleancss css/*.css -o dist/css/styles.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://carla_rsmendes@bitbucket.org/carla_rsmendes/vinculo_precificacao.git"
+  },
+  "author": "carla_mendes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://bitbucket.org/carla_rsmendes/vinculo_precificacao/issues"
+  },
+  "homepage": "https://bitbucket.org/carla_rsmendes/vinculo_precificacao#readme",
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "uglify-js": "^3.17.4"
+  }
+}

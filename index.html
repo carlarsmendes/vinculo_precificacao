@@ -40,16 +40,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <header>
+    <header class="c-mg-left">
         <div class="col-1">
-            <p>Planilha Grátis</p>
+            <p class="c-pill c-body-l">Planilha Grátis</p>
             <h1>Quanto vale o meu Design?</h1>
-            <p class="c-light-green-text">Uma abordagem prática sobre a formação de preço para projetos criativos.</p>
-            <p class="c-light-green-text">Perfeita para Freelas</p>
+            <p class="c-light-green-text c-body-xl c-align-left">Uma abordagem prática sobre a formação de preço para projetos criativos.</p>
+            <p class="btn c-light-green-text c-btn-secondary c-body-l">Perfeita para Freelas</p>
         </div>
         <div class="col-2">
             <figure>
@@ -58,27 +59,54 @@
         </div>    
     </header>
     <main>
-        <section id="steps">
-            <h2>O preço do seu projeto em apenas 1, 2, 3 passos</h2>
+        <section id="steps" class="c-mg-horizontal">
+            <h2 class="mb-5">O preço do seu projeto em apenas 1, 2, 3 passos</h2>
             <div id="steps-container"></div>
         </section>
-        <section id="features">
-            <h2>Muito mais que uma planilha</h2>
-            <div id="features-container"></div>
+        <section id="features" class="c-mg-horizontal">
+            <h2 class="mb-5">Muito mais que uma planilha</h2>
+            <div id="features-container">
+                <div class="features-card">
+                    <img src="./img/icon_watch.png" alt="">
+                    <div class="content-container">
+                        <p class="c-body-l">Obtenha seu preço em tempo real e <strong>embasado pelo seu processo</strong> de trabalho</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <img src="./img/icon_tag.png" alt="">
+                    <div class="content-container">
+                        <p class="c-body-l">Desmistifica o tabu sobre preço no design</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <img src="./img/icon_academic.png" alt="">
+                    <div class="content-container">
+                        <p class="c-body-l"><strong>Ajuda jovens designers (e não só) a entenderem o valor do seu trabalho</strong> e a defenderem o seu preço com base em dados reais</p>
+                    </div>
+                </div>
+                <div class="features-card">
+                    <img src="./img/Icons_video.png" alt="">
+                    <div class="content-container">
+                        <p class="c-body-l">Ainda não sabe bem como funciona?</p>
+                        <p class="c-body-l">Assita à Demo no nosso canal do YouTube e descubra todos os detalhes</p>
+                    </div>
+                </div>
+                <img class="gumroad-cover" src="./img/cover_image_desktop.png" alt="printscreen of gumroad cover">
+            </div>
         </section>
         <section id="answer-questionnaire">
-            <h2>Perfeita para seu projeto criativo. (Seja ele qual for)</h2>
-            <div id="area-tags-container"></div>
-            <p class="c-body-xl">Você é quem define o projeto que vai fazer, a metodologia e prazos para cada etapa. Pense na planilha como um quadro em branco que você pode preencher como se sentir mais confortável.</p>
+            <h2 class="c-mg-horizontal mb-5">Perfeita para seu projeto criativo. (Seja ele qual for)</h2>
+            <ul id="project-types-container" class="mb-5"></ul>
+            <p class="c-body-xl mb-5">Você é quem define o projeto que vai fazer, a metodologia e prazos para cada etapa. Pense na planilha como um quadro em branco que você pode preencher como se sentir mais confortável.</p>
             <p>Gostaria de ter templates de projetos?</p>
             <button class="c-btn"><img src="./img/icon_questionario.png">Responda ao nosso questionário</button>
         </section>
-        <section id="testimonials">
-            <h3>Quem já usou, aprovou</h3>
+        <section id="testimonials" class="c-mg-horizontal">
+            <h3 class="mb-5">Quem já usou, aprovou</h3>
             <div id="testimonials-container"></div>
         </section>
         <section id="about">
-            <h2 class="c-light-green-text">Um projeto que nasceu da vontate de compartilhar o que aprendemos com a nossa experiência</h2>
+            <h2 class="c-light-green-text c-mg-horizontal">Um projeto que nasceu da vontate de compartilhar o que aprendemos com a nossa experiência</h2>
             <p class="c-body-l">Em 2010, uma ideia surgiu: criar uma planilha para ajudar nossos alunos a entender a precificação em projetos de design. Essa ferramenta nasceu com a missão de desmistificar a complexidade do design e conscientizar sobre o verdadeiro valor do nosso trabalho.</p>
             <p class="c-body-l">Baseada em nosso método de precificação na Vínculo, a planilha evoluiu ao longo dos anos, ajudando jovens profissionais no Brasil e em Portugal a compreenderem o real valor de seus projetos de design.</p>
             <p class="c-body-l"> Até agora, essa ferramenta esteve disponível apenas para nossos alunos e amigos mais próximos. Mas acreditamos que é hora de compartilhá-la com uma comunidade maior.</p>
@@ -103,7 +131,8 @@
     </footer>
 
     <script src="./js/testimonials.js"></script> 
+    <script src="./js/steps.js"></script> 
+    <script src="./js/projectTypes.js"></script> 
     <script src="./js/script.js"></script> <!-- Link to external JavaScript file -->
-    <script src="https://cdn.jsd
-    elivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
