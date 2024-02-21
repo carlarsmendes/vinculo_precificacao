@@ -170,11 +170,16 @@ header, #steps, #answer-questionnaire, #testimonials-container, #features-contai
     align-items: center;
 }
 
+#answer-questionnaire, #steps, header, #testimonials {
+    margin-bottom: 120px;
+}
+
 header {    
     background: linear-gradient(102.63deg, #031519 11.92%, #112C32 181.82%);
     color: var(--c-primary-text-color);
     min-height: 720px;
     margin-left: 8vw;
+    padding-top: 100px;
 }
 
 header .col-1, header .col-2 {    
@@ -185,15 +190,22 @@ header .col-2 {
     text-align: right;
  }
 
+ header {
+    padding: 24px;
+ }
+
  .c-cover-img {
     width: 100%;
  }
 
+
+ 
 #steps {
     min-height: 890px;
     flex-direction: column;
     /*margin-left: 8vw;
-    margin-right: 8vw;*/
+    margin-right: 8vw;
+    margin-bottom: 120px;*/
 }
 
 #steps-container {
@@ -254,6 +266,7 @@ header .col-2 {
 #answer-questionnaire {
     min-height: 890px;
     flex-direction: column;
+   /* margin-bottom: 120px;*/
 }
 
 #answer-questionnaire .c-pill {
@@ -306,12 +319,16 @@ header .col-2 {
 }
 
 #about p, #about ol li, #help-contribute p {
-    max-width: 794px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
 #about ol {
     margin-left: 35px;
+}
+
+#about ol li {
+    margin-bottom: 20px;
 }
 
 #help-contribute {
@@ -341,6 +358,10 @@ footer img {
         font-size: 14px; /* Adjust the base font size for smaller screens */
     }
 
+    .c-body-xl {
+        font-size: 1.5em;
+    }
+
     header {
         justify-content: left;
     }
@@ -362,6 +383,10 @@ footer img {
         width: 100%;
     }
 
+    #steps, #features {
+        min-height: auto;
+    }
+
     #steps-container, #testimonials-container, #project-types-container {
         justify-content: start;
         width: 100vw;
@@ -374,12 +399,18 @@ footer img {
         min-width: 45vw;
     }
 
+
+    #features {
+        margin-bottom: 100px;
+    }
+
     #features h2 {
         margin: 0 8vw;
     }
 
     .features-card {
         flex-basis: 48%;
+        height: 330px;
     }
 
     .gumroad-cover {
@@ -392,10 +423,10 @@ footer img {
     }
 
     #testimonials .c-card {
-        min-width: 80vw;
+        min-width: 55vw;
     }
 
-    #about p, #about ol li, #help-contribute p {
+    #answer-questionnaire p , #about p, #about ol li, #help-contribute p {
         max-width: 794px;
         margin: 0 8vw;
     }
@@ -406,15 +437,55 @@ footer img {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 530px) {
+
+    header {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    #features-container {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    #steps .c-card {
+        min-width: 60vw;
+    }
+
+}
+
+
+@media (max-width: 400px) {
     
+    h1 {
+        font-size: 3em;
+    }
+
+    h2, h3 {
+        font-size: 2em;
+    }
+
+    .c-body-l {
+        font-size: 1em;
+    }
+
+    .c-body-xl {
+        font-size: 1.1em;
+    }
+
     .c-mg-left  {
         margin-left: 4vw;
     }
 
-    .c-mg-horizontal, #answer-questionnaire h2, #answer-questionnaire p {
+    .c-mg-horizontal, #answer-questionnaire h2, #answer-questionnaire p, h4 {
         margin-right: 4vw;
         margin-left: 4vw;
+    }
+
+    header {
+        padding: 20px 0px;
+        min-height: auto;
     }
 
     #steps .c-card {
@@ -435,6 +506,35 @@ footer img {
 
     #project-types-container {
         flex-wrap: wrap;
+    }
+
+    #project-types-container {
+        gap: 10px;
+    }
+
+    #testimonials .c-card {
+        min-width: 85vw;
+    }
+ 
+    #answer-questionnaire .c-pill {
+        padding: 20px 24px;
+        margin-bottom: 0px;
+    }
+
+    #about ol {
+        margin-left: 0;
+    }
+
+    h4 {
+        text-align: left;
+    }
+
+    #answer-questionnaire p, #about p, #about ol li, #help-contribute p {
+        margin: 0 4vw;
+    }
+
+    #about ol li, #help-contribute p {
+        margin-bottom: 20px;
     }
 
     

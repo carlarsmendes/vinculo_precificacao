@@ -17,11 +17,11 @@ function createCard(number, title, description) {
 
     const cardNumber = document.createElement('div');
     cardNumber.textContent = number;
-    cardNumber.classList.add('c-pill', 'mb-3');
+    cardNumber.classList.add('c-pill', 'mb-4');
 
     const cardTitle = document.createElement('h3');
     cardTitle.textContent = title;
-    cardTitle.classList.add('c-align-left', 'mb-4');
+    cardTitle.classList.add('c-align-left', 'mb-5');
 
     const cardContent = document.createElement('p');
     cardContent.innerHTML = description;
