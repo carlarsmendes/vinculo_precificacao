@@ -21,3 +21,11 @@ pipelines:
 
             # Run code quality checks
             - htmlhint "**/*.html"
+            
+      - step:
+          name: Optimize JS and CSS
+          script:
+            # Minify JavaScript and CSS files
+            - npm install
+            - npm run optimize
+  
