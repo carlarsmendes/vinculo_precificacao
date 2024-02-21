@@ -352,12 +352,41 @@ TODO: Define breakpoints */
         font-size: 14px; /* Adjust the base font size for smaller screens */
     }
 
+    header {
+        justify-content: left;
+    }
+
+    h2, #answer-questionnaire h2, #answer-questionnaire p {
+        text-align: left;
+    }
+
+    header p {
+        margin-right: 8vw;
+    }
+
+    header .col-2, .c-cover-img {
+        display: none;
+    }
+
+    header .col-1 {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
     #steps-container {
         justify-content: start;
         width: 100vw;
         overflow-x: auto;
         overflow-y: hidden;
         -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    }
+
+    #steps .c-card {
+        min-width: 45vw;
+    }
+
+    #features h2 {
+        margin: 0 8vw;
     }
 
     .features-card {
@@ -384,13 +413,84 @@ TODO: Define breakpoints */
     -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */    
     }
 
-    #testimonials {
+    #testimonials, #features {
         margin-left: 0;
         margin-right: 0;
     }
 
     #testimonials .c-card {
         min-width: 80vw;
+    }
+
+    #about p, #about ol li, #help-contribute p {
+        max-width: 794px;
+        margin: 0 8vw;
+    }
+
+    h2 {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 375px) {
+    
+    .c-mg-left  {
+        margin-left: 4vw;
+    }
+    .c-mg-horizontal, #answer-questionnaire h2, #answer-questionnaire p {
+        margin-right: 4vw;
+        margin-left: 4vw;
+    }
+
+    #steps .c-card {
+        min-width: 85vw;
+    }
+
+    #features-container {
+        flex-direction: column;
+    }
+
+
+
+    #features h2 {
+        margin: 0 4vw;
+    }
+
+    .features-card {
+        flex-basis: 48%;
+    }
+
+    #project-types-container {
+        flex-wrap: wrap;
+    }
+
+    
+
+    #testimonials-container {
+        justify-content: start;
+        width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */    
+    }
+
+    #testimonials, #features {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #testimonials .c-card {
+        min-width: 80vw;
+    }
+
+    #about p, #about ol li, #help-contribute p {
+        max-width: 794px;
+        margin: 0 8vw;
+    }
+
+    #about h2 {
+        text-align: left;
     }
 }
 
