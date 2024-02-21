@@ -1,0 +1,23 @@
+# Use a Node.js image as the base for your pipeline
+image: node:14
+
+# Define your pipelines
+pipelines:
+  branches:
+    # Pipeline for the main branch (production environment)
+    main:
+      - step:
+          name: Deploy to Production
+          script:
+            - echo "Deploying to production environment..."
+
+    # Pipeline for the dev branch (development environment)
+    dev:
+      - step:
+          name: Check Code Quality
+          script:
+            # Install dependencies needed for code quality checks
+            - npm install --global htmlhint-cli
+
+            # Run code quality checks
+            - htmlhint "**/*.html"
