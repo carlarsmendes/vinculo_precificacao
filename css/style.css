@@ -266,6 +266,7 @@ header .col-1, header .col-2 {
 }
 
 #testimonials-container {
+    align-items: stretch; /* This will make all items have the same height */
     gap: 2%;
 }
 
@@ -298,3 +299,52 @@ TODO: Define breakpoints */
         font-size: 14px; /* Adjust the base font size for smaller screens */
     }
 }
+
+
+@media (max-width: 800px) {
+    html {
+        font-size: 14px; /* Adjust the base font size for smaller screens */
+    }
+
+    #steps-container {
+        justify-content: start;
+        width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    }
+
+    .features-card {
+        flex-basis: 48%;
+    }
+
+    .gumroad-cover {
+        display: none;
+    }
+
+    #project-types-container {
+        justify-content: start;
+        width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    }
+
+    #testimonials-container {
+        justify-content: start;
+        width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */    
+    }
+
+    #testimonials {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #testimonials .c-card {
+        min-width: 80vw;
+    }
+}
+
