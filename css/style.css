@@ -8,7 +8,7 @@
     --c-primary-text-color: #fff;
 }
 
-html, body {
+body {
     margin: 0;
     padding: 0;
     font-size: 16px; /* Base font size */
@@ -16,7 +16,7 @@ html, body {
     color: var(--c-primary-text-color);
 }
 
-html, h1, h2, h3, h4, p, .subtitle-1, .subtitle-2, .c-body-l, .c-body-xl {
+h1, h2, h3, h4, p, .subtitle-1, .subtitle-2, .c-body-l, .c-body-xl {
     font-family: var(--c-primary-font);
     letter-spacing: 0em;
 }
@@ -121,6 +121,10 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     max-width: 795px;
+}
+
+.bg-dark-green-2 {
+    background-color: var(--c-dark-green-2);
 }
 
 
@@ -230,7 +234,6 @@ header .col-2 {
     justify-content: space-between;
     align-items: flex-start;
     border-radius: 16px;
-    background-color: var(--c-dark-green-2);
     flex-basis: 32%;
     padding: 32px;
     height: 370px;
@@ -254,8 +257,8 @@ header .col-2 {
 }
 
 #answer-questionnaire .c-pill {
-    background-color: var(--c-dark-green-2);
     color: var(--c-light-green);
+    background-color: var(--c-dark-green-2);
     border: 1px solid var(--c-dark-green-2);
     border-radius: 16px;
     text-transform: capitalize;
@@ -287,6 +290,7 @@ header .col-2 {
 }
 
 #testimonials-container {
+    align-items: stretch; /* This will make all items have the same height */
     gap: 2%;
 }
 
@@ -316,15 +320,9 @@ header .col-2 {
 }
 
 .c-card {
-    background-color: var(--c-dark-green-2);
     padding: 48px 20px;
     border-radius: 16px;
     flex-basis: 33%;
-}
-
-
-footer {
-    background-color: var(--c-dark-green-2);
 }
 
 footer p.subtitle-2 {
@@ -337,10 +335,109 @@ footer img {
     margin-bottom:5px;
 }
 
-/* Example of responsive font -> smaller screen 
-TODO: Define breakpoints */
-@media (max-width: 768px) {
+
+
+@media (max-width: 800px) {
     html {
         font-size: 14px; /* Adjust the base font size for smaller screens */
     }
+
+    header {
+        justify-content: left;
+    }
+
+    h2, #answer-questionnaire h2, #answer-questionnaire p {
+        text-align: left;
+    }
+
+    header p {
+        margin-right: 8vw;
+    }
+
+    header .col-2, .c-cover-img {
+        display: none;
+    }
+
+    header .col-1 {
+        flex-basis: 100%;
+        width: 100%;
+    }
+
+    #steps-container, #testimonials-container, #project-types-container {
+        justify-content: start;
+        width: 100vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    }
+
+    #steps .c-card {
+        min-width: 45vw;
+    }
+
+    #features h2 {
+        margin: 0 8vw;
+    }
+
+    .features-card {
+        flex-basis: 48%;
+    }
+
+    .gumroad-cover {
+        display: none;
+    }
+
+    #testimonials, #features {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #testimonials .c-card {
+        min-width: 80vw;
+    }
+
+    #about p, #about ol li, #help-contribute p {
+        max-width: 794px;
+        margin: 0 8vw;
+    }
+
+    h2 {
+        text-align: left;
+    }
 }
+
+
+@media (max-width: 375px) {
+    
+    .c-mg-left  {
+        margin-left: 4vw;
+    }
+
+    .c-mg-horizontal, #answer-questionnaire h2, #answer-questionnaire p {
+        margin-right: 4vw;
+        margin-left: 4vw;
+    }
+
+    #steps .c-card {
+        min-width: 85vw;
+    }
+
+    #features-container {
+        flex-direction: column;
+    }
+
+    #features h2 {
+        margin: 0 4vw;
+    }
+
+    .features-card {
+        flex-basis: 48%;
+    }
+
+    #project-types-container {
+        flex-wrap: wrap;
+    }
+
+    
+}
+

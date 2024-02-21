@@ -11,7 +11,7 @@
 // Function to create a card element
 function createCard(name, content, jobName, imgUrl) {
     const card = document.createElement('div');
-    card.classList.add('c-card');
+    card.classList.add('c-card','bg-dark-green-2');
 
     const cardHeader = document.createElement('div');
     cardHeader.classList.add('c-card-header','mb-3');

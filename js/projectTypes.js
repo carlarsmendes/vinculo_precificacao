@@ -12,7 +12,7 @@
 // Function to create a card element
 function createCard(name) {
     const listItem = document.createElement('li'); // Create list item
-    listItem.classList.add('c-pill');
+    listItem.classList.add('c-pill', 'bg-dark-green-2');
 
     const pillContent = document.createElement('span'); // Create span for pill content
     pillContent.textContent = name;
