@@ -451,8 +451,6 @@ TODO: Define breakpoints */
         flex-direction: column;
     }
 
-
-
     #features h2 {
         margin: 0 4vw;
     }
@@ -466,31 +464,5 @@ TODO: Define breakpoints */
     }
 
     
-
-    #testimonials-container {
-        justify-content: start;
-        width: 100vw;
-        overflow-x: auto;
-        overflow-y: hidden;
-    -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */    
-    }
-
-    #testimonials, #features {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    #testimonials .c-card {
-        min-width: 80vw;
-    }
-
-    #about p, #about ol li, #help-contribute p {
-        max-width: 794px;
-        margin: 0 8vw;
-    }
-
-    #about h2 {
-        text-align: left;
-    }
 }
 
