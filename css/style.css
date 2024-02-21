@@ -270,7 +270,6 @@ header .col-2 {
 }
 
 #answer-questionnaire .c-pill span {
-    text-wrap: nowrap;
     white-space: nowrap;
 }
 
@@ -368,7 +367,7 @@ footer img {
         width: 100vw;
         overflow-x: auto;
         overflow-y: hidden;
-        -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+        --webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
     }
 
     #steps .c-card {
