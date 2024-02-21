@@ -13,7 +13,7 @@
 // Function to create a card element
 function createCard(number, title, description) {
     const card = document.createElement('div');
-    card.classList.add('c-card');
+    card.classList.add('c-card','bg-dark-green-2');
 
     const cardNumber = document.createElement('div');
     cardNumber.textContent = number;
