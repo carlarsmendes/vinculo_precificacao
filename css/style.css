@@ -112,6 +112,11 @@ h4 {
     margin-right: 8vw;
 }
 
+.c-pd-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .text-block {
     margin-left: auto;
     margin-right: auto;
@@ -122,9 +127,10 @@ h4 {
 .c-btn {
     background-color: var(--c-light-green);
     border: 1px solid var(--c-light-green);
-    padding: 16px, 24px, 16px, 24px;
+    padding: 16px 24px;
     border-radius: 8px;
     color: var(--c-dark-green);
+    margin: 0 auto;
 }
 
 .c-btn-secondary {
@@ -154,7 +160,7 @@ h4 {
 
 /* SECTIONS */
 
-header, #steps, #answer-questionnaire, #testimonials-container, #features-container {
+header, #steps, #answer-questionnaire, #testimonials-container, #features-container, #help-contribute {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,6 +176,14 @@ header {
 header .col-1, header .col-2 {    
     flex-basis: 50%;
 }
+
+header .col-2 {   
+    text-align: right;
+ }
+
+ .c-cover-img {
+    width: 100%;
+ }
 
 #steps {
     min-height: 890px;
@@ -229,8 +243,9 @@ header .col-1, header .col-2 {
 }
 
 .gumroad-cover {
-    height: 370px;
-    width: auto;
+    height: auto;
+    width: 66%;
+    border-radius: 16px;
 }
 
 #answer-questionnaire {
@@ -256,13 +271,19 @@ header .col-1, header .col-2 {
     white-space: nowrap;
 }
 
-#answer-questionnaire p {
-    max-width: 800px;
+#answer-questionnaire p, 
+#answer-questionnaire h2 {
+    max-width: 890px;
+    text-align: center;
 }
 
 .c-card-header {
     display: flex;
     gap:3%;
+}
+
+.c-card img {
+    object-fit: contain;
 }
 
 #testimonials-container {
@@ -274,10 +295,25 @@ header .col-1, header .col-2 {
     display: flex;
     flex-direction: row;
     gap:1%;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 #project-types-container li {
     list-style: none;
+}
+
+#about p, #about ol li, #help-contribute p {
+    max-width: 794px;
+    margin: 0 auto;
+}
+
+#about ol {
+    margin-left: 35px;
+}
+
+#help-contribute {
+    flex-direction: column;
 }
 
 .c-card {
@@ -290,6 +326,16 @@ header .col-1, header .col-2 {
 
 footer {
     background-color: var(--c-dark-green-2);
+}
+
+footer p.subtitle-2 {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer img {
+    margin-bottom:5px;
 }
 
 /* Example of responsive font -> smaller screen 
