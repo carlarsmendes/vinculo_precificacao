@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "npm test",
-    "optimize": "uglifyjs js/*.js -o dist/js/script.min.js && cleancss css/*.css -o dist/css/styles.min.css"
+    "optimize": "uglifyjs js/*.js -o js/script.min.js && cleancss css/*.css -o css/styles.min.css"
   },
   "repository": {
     "type": "git",
