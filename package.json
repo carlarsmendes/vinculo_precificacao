@@ -19,6 +19,8 @@
   "homepage": "https://bitbucket.org/carla_rsmendes/vinculo_precificacao#readme",
   "devDependencies": {
     "clean-css": "^5.3.3",
+    "eslint": "^8.57.0",
+    "eslint-plugin-html": "^8.0.0",
     "uglify-js": "^3.17.4"
   }
 }
