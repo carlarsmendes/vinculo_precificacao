@@ -133,6 +133,7 @@ h4 {
     border-radius: 8px;
     color: var(--c-dark-green);
     margin: 0 auto;
+    text-decoration: none;
 }
 
 .c-btn-secondary {
@@ -256,9 +257,9 @@ header .col-2 {
     justify-content: center;*/
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     gap: 1%;
     row-gap: 5%;
 }
@@ -281,7 +282,6 @@ header .col-2 {
     -ms-flex-preferred-size: 32%;
         flex-basis: 32%;
     padding: 32px;
-    height: 370px;
     margin-bottom: 10px;
 }
 
@@ -290,10 +290,26 @@ header .col-2 {
     font-size: 22px;
 }
 
+
 .gumroad-cover {
     height: auto;
     width: 66%;
     border-radius: 16px;
+}
+
+.video-container {
+    overflow: hidden;
+    width: 66%;
+    border-radius: 16px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-assistir-youtube {
+    display: none;
 }
 
 #answer-questionnaire {
@@ -475,8 +491,12 @@ footer img {
         height: 330px;
     }
 
-    .gumroad-cover {
+    .gumroad-cover, .video-container {
         display: none;
+    }
+
+    .btn-assistir-youtube {
+        display: inline-block;
     }
 
     #testimonials, #features {
