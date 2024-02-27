@@ -17,10 +17,10 @@ pipelines:
           name: Check Code Quality
           script:
             # Install dependencies needed for code quality checks
-            - npm install --global htmlhint-cli
+            - npm install --global eslint
 
-            # Run code quality checks
-            - htmlhint "**/*.html"
+            # Run code quality checks for HTML files using eslint-plugin-html
+            - eslint --plugin html --ext .html .
             
       - step:
           name: Optimize JS and CSS
