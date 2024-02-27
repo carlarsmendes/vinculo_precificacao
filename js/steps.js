@@ -26,7 +26,6 @@ function createCard(number, title, description) {
     const cardContent = document.createElement('p');
     cardContent.innerHTML = description;
 
-    console.log("cardNumber,cardTitle,cardContent", cardNumber,cardTitle,cardContent);
     card.appendChild(cardNumber);
     card.appendChild(cardTitle);
     card.appendChild(cardContent);

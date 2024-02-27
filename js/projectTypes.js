@@ -18,7 +18,6 @@ function createCard(name) {
     pillContent.textContent = name;
 
     listItem.appendChild(pillContent); // Append pill content to list item
-    console.log("listItem",listItem);
     return listItem; // Return the list item
 }
 
