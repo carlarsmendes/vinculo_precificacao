@@ -20,7 +20,7 @@ pipelines:
             - npm install --global eslint
 
             # Run ESLint for JavaScript files
-            - eslint "**/*.js"
+            - eslint . --ext .js --ignore-pattern '*.min.js'
 
             # Run HTML linting
             - eslint "**/*.html"

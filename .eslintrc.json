@@ -1,15 +1,17 @@
 {
   "plugins": ["html"],
   "extends": ["eslint:recommended"],
+  "parserOptions": {
+      "ecmaVersion": 6
+  },
+  "env": {
+    "browser": true
+  },
   "rules": {
       // Enforce the use of semicolons at the end of statements
       "semi": ["error", "always"],
       // Require variables to be initialized when declared
       "init-declarations": "error",
-      // Flag unused variables
-      "no-unused-vars": "error",
-      // Disallow trailing whitespace at the end of lines
-      "no-trailing-spaces": "error",
       // Disallow unused parameters in functions
       "no-unused-vars": ["error", { "args": "none" }]
   }
