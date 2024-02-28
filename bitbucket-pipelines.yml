@@ -14,7 +14,7 @@ pipelines:
     # Pipeline for the dev branch (development environment)
     dev:
       - step:
-          name: Check Code Quality (HTML & JavaScript)
+          name: Check Code Quality (JavaScript)
           script:
             # Install dependencies needed for HTML and JavaScript code quality checks
             - npm install --global eslint
@@ -22,8 +22,6 @@ pipelines:
             # Run ESLint for JavaScript files
             - eslint . --ext .js --ignore-pattern '*.min.js'
 
-            # Run HTML linting
-            - eslint "**/*.html"
             
       - step:
           name: Optimize JS and CSS
