@@ -1,5 +1,4 @@
 {
-  "plugins": ["html"],
   "extends": ["eslint:recommended"],
   "parserOptions": {
       "ecmaVersion": 6
