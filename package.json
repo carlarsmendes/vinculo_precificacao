@@ -6,7 +6,9 @@
   "scripts": {
     "test": "npm test",
     "optimize": "uglifyjs js/*.js -o js/script.min.js && npm run optimize-css",
-    "optimize-css": "cleancss css/*.css -o css/styles.min.css"
+    "optimize-css": "cleancss css/*.css -o css/styles.min.css",
+    "deploy": "node deploy.js",
+    "copy-files": "node copy-files.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,12 @@
     "clean-css-cli": "^5.6.3",
     "eslint": "^8.57.0",
     "eslint-plugin-html": "^8.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "ftp-deploy": "^2.4.7",
     "uglify-js": "^3.17.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0"
   }
 }

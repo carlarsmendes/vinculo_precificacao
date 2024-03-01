@@ -1,5 +1,8 @@
 {
-  "extends": ["eslint:recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended" // Use recommended rules for Node.js environment
+  ],
   "parserOptions": {
       "ecmaVersion": 6
   },
@@ -12,6 +15,9 @@
       // Require variables to be initialized when declared
       "init-declarations": "error",
       // Disallow unused parameters in functions
-      "no-unused-vars": ["error", { "args": "none" }]
+      "no-unused-vars": ["error", { "args": "none" }],
+      "node/no-unpublished-import": ["error", {
+        "allowModules": ["ftp-deploy"]
+    }],  "node/no-unpublished-require": "off"
   }
 }
