@@ -7,8 +7,11 @@ pipelines:
     # Pipeline for the main branch (production environment)
     main:
       - step:
-          name: Deploy to Production
+          name: Optimize and Deploy to Production
           script:
+            - npm install
+            - npm run pre-deploy
+            - npm run deploy
             - echo "Deploying to production environment..."
 
     # Pipeline for the dev branch (development environment)
@@ -29,4 +32,3 @@ pipelines:
             # Minify JavaScript and CSS files
             - npm install
             - npm run optimize
-  
