@@ -20,7 +20,7 @@ pipelines:
           name: Check Code Quality (JavaScript)
           script:
             # Install dependencies needed for HTML and JavaScript code quality checks
-            - npm install --global eslint
+            - npm install --global eslint eslint-plugin-node
 
             # Run ESLint for JavaScript files
             - eslint . --ext .js --ignore-pattern '*.min.js'
