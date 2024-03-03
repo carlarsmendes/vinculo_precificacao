@@ -8,7 +8,8 @@
     "optimize": "uglifyjs js/*.js -o js/script.min.js && npm run optimize-css",
     "optimize-css": "cleancss css/*.css -o css/styles.min.css",
     "deploy": "node deploy.js",
-    "copy-files": "node copy-files.js"
+    "copy-files": "node copy-files.js",
+    "pre-deploy": "npm run optimize && npm run copy-files"
   },
   "repository": {
     "type": "git",

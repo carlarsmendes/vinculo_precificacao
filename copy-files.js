@@ -7,12 +7,11 @@ const sourceDir = '';
 // Destination directory (the dist folder)
 const distDir = 'dist';
 
-// Files to be copied
+// Files to be copied - All the fles which will be changes frequently
 const filesToCopy = [
   'index.html',           // Single file in the root directory
-  'css/style.css' ,       // File inside a subdirectory
-  'img/**/*' ,      // All files from the styles directory and its subdirectories
-  // Add more files as needed
+  'css/style.css' ,
+  'css/styles.min.css' ,       // File inside a subdirectory
   'js/projectTypes.js',
   'js/steps.js',
   'js/testimonials.js',
