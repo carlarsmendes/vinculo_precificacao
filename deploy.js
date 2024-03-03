@@ -16,7 +16,7 @@ const config = {
   host: ftpHost,
   port: ftpPort,
   localRoot: __dirname + '/dist',// or the directory containing your build artifacts
-  remoteRoot: '/public_html/price',// the directory on the FTP server to upload to
+  remoteRoot: '/public_html',// the directory on the FTP server to upload to
   include: ['*', '**/*'], // Include all files and directories recursively from the localRoot directory
 };
 
